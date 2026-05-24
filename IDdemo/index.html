@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFB452 SEEK Verification Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="portal-container">
+        <div class="card-grid">
+            
+            <div class="main-content">
+                <div class="seek-header">
+                    <div class="seek-logo">seek<span>verified</span></div>
+                </div>
+                
+                <h2>QUT IFB452 Tutor Application</h2>
+                <p>To complete your job application, verify your age and citizenship using a digital wallet to proceed</p>
+
+                <div class="modular-field">
+                    <label>Age Salt</label>
+                    <input type="text" id="ageSalt" value="local_wallet_age_salt">
+                </div>
+
+                <div class="modular-field">
+                    <label>Citizenship Salt</label>
+                    <input type="text" id="citizenSalt" value="local_wallet_citizenship_salt">
+                </div>
+
+                <button class="seek-btn" id="verifyBtn">Submit Verification</button>
+                <button class="toggle-telemetry-btn" id="toggleVectorsBtn">More Details</button>
+
+                <div id="telemetryBox" class="telemetry-box" style="display: none;">
+                    <div style="font-weight:bold; color:#666666;">Age Hash:</div>
+                    <span id="ageHashOutput" class="hash-value">0x...</span>
+                    
+                    <div style="font-weight:bold; color:#666666; margin-top:8px;">Citizenship Hash:</div>
+                    <span id="citizenHashOutput" class="hash-value">0x...</span>
+                </div>
+            </div>
+
+            <div class="status-sidebar">
+                <div>
+                    <div class="sidebar-title">User Wallet</div>
+                    <div class="wallet-box" id="sidebarWallet">...</div>
+                </div>
+
+                <div>
+                    <div class="sidebar-title" style="margin-bottom: 8px;">Verification Status</div>
+                    
+                    <div class="credential-badge" style="margin-bottom: 12px;">
+                        <span>Age Check</span>
+                        <span id="badgeAge" class="badge-state state-unverified">...</span>
+                    </div>
+
+                    <div class="credential-badge">
+                        <span>Citizenship</span>
+                        <span id="badgeCitizen" class="badge-state state-unverified">...</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

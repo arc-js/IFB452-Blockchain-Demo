@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    color: #333333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding-top: 60px; 
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.portal-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* basic layout columns */
+.card-grid {
+    background-color: #ffffff;
+    border: 1px solid #d8dee2;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.status-sidebar {
+    background-color: #f0f4f8;
+    border-left: 1px solid #d8dee2;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* seek header style */
+.seek-header {
+    border-bottom: 2px solid #d8dee2;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.seek-logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #0d385c;
+}
+
+.seek-logo span {
+    color: #e60278;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #0d385c;
+}
+
+p {
+    font-size: 13px;
+    color: #666666;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+}
+
+/* inputs and forms */
+.modular-field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid #a5b2b9;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.seek-btn {
+    background-color: #e60278;
+    color: #FFFFFF;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* sidebar stuff */
+.sidebar-title {
+    font-size: 11px;
+    font-weight: bold;
+    color: #0d385c;
+    text-transform: uppercase;
+}
+
+.wallet-box {
+    font-family: monospace;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d8dee2;
+    color: #666666;
+    word-break: break-all;
+}
+
+.credential-badge {
+    background: #ffffff;
+    border: 1px solid #d8dee2;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.badge-state {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* state colours */
+.state-unverified { background: #e9ecef; color: #666666; }
+.state-verified { background: #e6f4ea; color: #008a00; }
+.state-failed { background: #fce8e6; color: #da1212; }
+
+.toggle-telemetry-btn {
+    background: none;
+    border: 1px solid #0d385c;
+    color: #0d385c;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
+}
+
+.telemetry-box {
+    margin-top: 10px;
+    background: #f4f6f8;
+    border: 1px solid #d8dee2;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.hash-value {
+    color: #0d385c;
+    word-break: break-all;
+    display: block;
+    background: #ffffff;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #d8dee2;
+}
